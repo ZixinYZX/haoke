@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.haoke.yang.dao.ContractMapper" >
+  <resultMap id="BaseResultMap" type="com.haoke.yang.bean.Contract" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="houseID" property="houseid" jdbcType="INTEGER" />
+    <result column="customerID" property="customerid" jdbcType="INTEGER" />
+    <result column="rentTime" property="renttime" jdbcType="INTEGER" />
+    <result column="rentMoney" property="rentmoney" jdbcType="DOUBLE" />
+    <result column="middleMoney" property="middlemoney" jdbcType="DOUBLE" />
+    <result column="middlePeople" property="middlepeople" jdbcType="VARCHAR" />
+    <result column="date" property="date" jdbcType="TIMESTAMP" />
+    <result column="IMG" property="img" jdbcType="VARCHAR" />
+    <result column="createTime" property="createtime" jdbcType="TIMESTAMP" />
+    <result column="upateTime" property="upatetime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, houseID, customerID, rentTime, rentMoney, middleMoney, middlePeople, date, IMG, 
+    createTime, upateTime
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from CONTRACT
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from CONTRACT
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.haoke.yang.bean.Contract" >
+    insert into CONTRACT (id, houseID, customerID, 
+      rentTime, rentMoney, middleMoney, 
+      middlePeople, date, IMG, 
+      createTime, upateTime)
+    values (#{id,jdbcType=INTEGER}, #{houseid,jdbcType=INTEGER}, #{customerid,jdbcType=INTEGER}, 
+      #{renttime,jdbcType=INTEGER}, #{rentmoney,jdbcType=DOUBLE}, #{middlemoney,jdbcType=DOUBLE}, 
+      #{middlepeople,jdbcType=VARCHAR}, #{date,jdbcType=TIMESTAMP}, #{img,jdbcType=VARCHAR}, 
+      #{createtime,jdbcType=TIMESTAMP}, #{upatetime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.haoke.yang.bean.Contract" >
+    insert into CONTRACT
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="houseid != null" >
+        houseID,
+      </if>
+      <if test="customerid != null" >
+        customerID,
+      </if>
+      <if test="renttime != null" >
+        rentTime,
+      </if>
+      <if test="rentmoney != null" >
+        rentMoney,
+      </if>
+      <if test="middlemoney != null" >
+        middleMoney,
+      </if>
+      <if test="middlepeople != null" >
+        middlePeople,
+      </if>
+      <if test="date != null" >
+        date,
+      </if>
+      <if test="img != null" >
+        IMG,
+      </if>
+      <if test="createtime != null" >
+        createTime,
+      </if>
+      <if test="upatetime != null" >
+        upateTime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="houseid != null" >
+        #{houseid,jdbcType=INTEGER},
+      </if>
+      <if test="customerid != null" >
+        #{customerid,jdbcType=INTEGER},
+      </if>
+      <if test="renttime != null" >
+        #{renttime,jdbcType=INTEGER},
+      </if>
+      <if test="rentmoney != null" >
+        #{rentmoney,jdbcType=DOUBLE},
+      </if>
+      <if test="middlemoney != null" >
+        #{middlemoney,jdbcType=DOUBLE},
+      </if>
+      <if test="middlepeople != null" >
+        #{middlepeople,jdbcType=VARCHAR},
+      </if>
+      <if test="date != null" >
+        #{date,jdbcType=TIMESTAMP},
+      </if>
+      <if test="img != null" >
+        #{img,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="upatetime != null" >
+        #{upatetime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.haoke.yang.bean.Contract" >
+    update CONTRACT
+    <set >
+      <if test="houseid != null" >
+        houseID = #{houseid,jdbcType=INTEGER},
+      </if>
+      <if test="customerid != null" >
+        customerID = #{customerid,jdbcType=INTEGER},
+      </if>
+      <if test="renttime != null" >
+        rentTime = #{renttime,jdbcType=INTEGER},
+      </if>
+      <if test="rentmoney != null" >
+        rentMoney = #{rentmoney,jdbcType=DOUBLE},
+      </if>
+      <if test="middlemoney != null" >
+        middleMoney = #{middlemoney,jdbcType=DOUBLE},
+      </if>
+      <if test="middlepeople != null" >
+        middlePeople = #{middlepeople,jdbcType=VARCHAR},
+      </if>
+      <if test="date != null" >
+        date = #{date,jdbcType=TIMESTAMP},
+      </if>
+      <if test="img != null" >
+        IMG = #{img,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        createTime = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="upatetime != null" >
+        upateTime = #{upatetime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.haoke.yang.bean.Contract" >
+    update CONTRACT
+    set houseID = #{houseid,jdbcType=INTEGER},
+      customerID = #{customerid,jdbcType=INTEGER},
+      rentTime = #{renttime,jdbcType=INTEGER},
+      rentMoney = #{rentmoney,jdbcType=DOUBLE},
+      middleMoney = #{middlemoney,jdbcType=DOUBLE},
+      middlePeople = #{middlepeople,jdbcType=VARCHAR},
+      date = #{date,jdbcType=TIMESTAMP},
+      IMG = #{img,jdbcType=VARCHAR},
+      createTime = #{createtime,jdbcType=TIMESTAMP},
+      upateTime = #{upatetime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
