@@ -1,9 +1,11 @@
 package com.haoke.yang.dao;
 
 import com.haoke.yang.bean.Customer;
+import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 @Repository
+@Mapper
 public interface CustomerMapper {
     int deleteByPrimaryKey(Integer id);
 
