@@ -3,16 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="74cf3e19-8340-441b-bf0d-e30fb8c507eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/haoke/yang/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/haoke/yang/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/haoke/yang/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/haoke/yang/service/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/haoke-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/haoke-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/haoke-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/haoke-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.haoke.yang.HaokeApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.haoke.yang.HaokeApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.haoke.yang.HaokeApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.haoke.yang.HaokeApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +66,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -135,7 +125,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576999099746</updated>
-      <workItem from="1576999104624" duration="17970000" />
+      <workItem from="1576999104624" duration="18347000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1577019019247</created>
@@ -144,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577019019248</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first commit">
+      <created>1577019484201</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1577019484201</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +156,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="542" y="60" key="#HaokeApplication/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577000955672" />
+    <state x="452" y="91" key="#Project_Structure" timestamp="1577019601330">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="91" key="#Project_Structure/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577019601330" />
     <state x="759" y="406" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1577002015393">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -187,6 +188,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577019369835" />
+    <state x="489" y="39" key="CommitChangelistDialog2" timestamp="1577019478335">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="489" y="39" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577019478335" />
+    <state x="184" y="80" key="DiffContextDialog" timestamp="1577019633808">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="80" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577019633808" />
     <state x="757" y="140" key="FileChooserDialogImpl" timestamp="1577018908626">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -227,10 +236,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1280" height="586" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577019433676" />
-    <state x="412" y="0" key="SettingsEditor" timestamp="1577018876342">
+    <state x="412" y="0" key="SettingsEditor" timestamp="1577019841967">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="412" y="0" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577018876342" />
+    <state x="412" y="0" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577019841967" />
+    <state x="452" y="184" key="Vcs.Push.Dialog.v2" timestamp="1577019643406">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577019643406" />
     <state x="733" y="281" key="chooseDestDirectoryDialog" timestamp="1577008660388">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
