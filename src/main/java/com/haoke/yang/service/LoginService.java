@@ -24,8 +24,6 @@ public class LoginService {
 
     //用户登录
     public User userLogin(String username, String password){
-        User user1 = userMapper.selectByPrimaryKey(1);
-        System.out.println(user1.getUsername());
         User user = userMapper.userLogin(username,password);
         return user;
     }

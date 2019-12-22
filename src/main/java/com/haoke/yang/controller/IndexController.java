@@ -32,8 +32,6 @@ public class IndexController {
 
     @RequestMapping("/login")
     public String login(@RequestParam("username") String username, @RequestParam("password") String password, HttpServletRequest request){
-        System.out.println(username);
-        System.out.println(password);
         User user = loginService.userLogin(username,password);
         if(user != null){  //登录成功
             request.getSession().setAttribute("session_user",user);     //将用户信息放入session
