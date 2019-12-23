@@ -44,9 +44,7 @@
       <if test="password != null" >
         password,
       </if>
-      <if test="createtime != null" >
         createTime,
-      </if>
       <if test="updatetime != null" >
         updateTime,
       </if>
@@ -62,7 +60,7 @@
         #{password,jdbcType=VARCHAR},
       </if>
       <if test="createtime != null" >
-        #{createtime,jdbcType=TIMESTAMP},
+        #{now(),jdbcType=TIMESTAMP},
       </if>
       <if test="updatetime != null" >
         #{updatetime,jdbcType=TIMESTAMP},

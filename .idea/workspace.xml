@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74cf3e19-8340-441b-bf0d-e30fb8c507eb" name="Default Changelist" comment="" />
+    <list default="true" id="74cf3e19-8340-441b-bf0d-e30fb8c507eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/haoke/yang/controller/UserManageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/haoke/yang/service/UserManageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/customerManage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/houseManage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/houseOwnerManage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/userManage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haoke.iml" beforeDir="false" afterPath="$PROJECT_DIR$/haoke.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/haoke/yang/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/haoke/yang/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userLogin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/contractManage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/haoke/yang/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/haoke/yang/controller/IndexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/haoke/yang/dao/ContractMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/haoke/yang/dao/ContractMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/haoke/yang/dao/CustomerMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/haoke/yang/dao/CustomerMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/haoke/yang/dao/CustomerNeedMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/haoke/yang/dao/CustomerNeedMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/haoke/yang/dao/HouseMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/haoke/yang/dao/HouseMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/haoke/yang/dao/HouseOwnerMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/haoke/yang/dao/HouseOwnerMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/haoke/yang/service/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/haoke/yang/service/LoginService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/haoke-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/haoke-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/haoke-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/haoke-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.haoke.yang.HaokeApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.haoke.yang.HaokeApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.haoke.yang.HaokeApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.haoke.yang.HaokeApplicationTests.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +43,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -44,7 +74,9 @@
     <option name="jreName" value="1.8" />
   </component>
   <component name="ProjectId" id="1VKQ2YiXjoVGp7BT8KRRiMPqFge" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -60,15 +92,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/yang" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.haoke" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\haoke\src\main\resources\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\haoke\src\main\resources" />
@@ -104,7 +139,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -123,7 +158,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576999099746</updated>
-      <workItem from="1576999104624" duration="18597000" />
+      <workItem from="1576999104624" duration="20417000" />
+      <workItem from="1577096922433" duration="13848000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1577019019247</created>
@@ -146,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577019985823</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="first commit11">
+      <created>1577020201956</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577020201956</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,13 +197,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="first commit11" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit11" />
   </component>
   <component name="WindowStateProjectService">
     <state x="542" y="60" key="#HaokeApplication" timestamp="1577000955672">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="542" y="60" key="#HaokeApplication/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577000955672" />
+    <state x="452" y="91" key="#Inspections" timestamp="1577101261283">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="91" key="#Inspections/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577101261283" />
+    <state x="452" y="91" key="#Notifications" timestamp="1577020228503">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="91" key="#Notifications/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577020228503" />
     <state x="452" y="91" key="#Project_Structure" timestamp="1577019601330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -193,10 +245,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577019369835" />
-    <state x="489" y="39" key="CommitChangelistDialog2" timestamp="1577019984247">
+    <state x="489" y="39" key="CommitChangelistDialog2" timestamp="1577020199842">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="489" y="39" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577019984247" />
+    <state x="489" y="39" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577020199842" />
     <state x="184" y="80" key="DiffContextDialog" timestamp="1577019633808">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -209,42 +261,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="813" y="383" width="324" height="273" key="Github.ShareDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577019262586" />
-    <state width="1280" height="586" key="GridCell.Tab.0.bottom" timestamp="1577019433676">
+    <state width="1280" height="584" key="GridCell.Tab.0.bottom" timestamp="1577110772171">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1280" height="586" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577019433676" />
-    <state width="1280" height="586" key="GridCell.Tab.0.center" timestamp="1577019433676">
+    <state width="1280" height="584" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577110772171" />
+    <state width="1280" height="584" key="GridCell.Tab.0.center" timestamp="1577110772171">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1280" height="586" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577019433676" />
-    <state width="1280" height="586" key="GridCell.Tab.0.left" timestamp="1577019433676">
+    <state width="1280" height="584" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577110772171" />
+    <state width="1280" height="584" key="GridCell.Tab.0.left" timestamp="1577110772171">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1280" height="586" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577019433676" />
-    <state width="1280" height="586" key="GridCell.Tab.0.right" timestamp="1577019433676">
+    <state width="1280" height="584" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577110772171" />
+    <state width="1280" height="584" key="GridCell.Tab.0.right" timestamp="1577110772171">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1280" height="586" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577019433676" />
-    <state width="1280" height="586" key="GridCell.Tab.1.bottom" timestamp="1577019433677">
+    <state width="1280" height="584" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577110772171" />
+    <state width="1280" height="584" key="GridCell.Tab.1.bottom" timestamp="1577110772172">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1280" height="586" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577019433677" />
-    <state width="1280" height="586" key="GridCell.Tab.1.center" timestamp="1577019433676">
+    <state width="1280" height="584" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577110772172" />
+    <state width="1280" height="584" key="GridCell.Tab.1.center" timestamp="1577110772171">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1280" height="586" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577019433676" />
-    <state width="1280" height="586" key="GridCell.Tab.1.left" timestamp="1577019433676">
+    <state width="1280" height="584" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577110772171" />
+    <state width="1280" height="584" key="GridCell.Tab.1.left" timestamp="1577110772171">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1280" height="586" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577019433676" />
-    <state width="1280" height="586" key="GridCell.Tab.1.right" timestamp="1577019433676">
+    <state width="1280" height="584" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577110772171" />
+    <state width="1280" height="584" key="GridCell.Tab.1.right" timestamp="1577110772171">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1280" height="586" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577019433676" />
-    <state x="412" y="0" key="SettingsEditor" timestamp="1577019841967">
+    <state width="1280" height="584" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577110772171" />
+    <state x="412" y="0" key="SettingsEditor" timestamp="1577021310174">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="412" y="0" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577019841967" />
+    <state x="412" y="0" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577021310174" />
     <state x="452" y="184" key="Vcs.Push.Dialog.v2" timestamp="1577019997438">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

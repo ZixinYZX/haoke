@@ -5,10 +5,12 @@ com\haoke\yang\bean\House.class
 com\haoke\yang\dao\ContractMapper.class
 com\haoke\yang\bean\Contract.class
 com\haoke\yang\controller\IndexController.class
+com\haoke\yang\service\UserManageService.class
 com\haoke\yang\dao\HouseMapper.class
 com\haoke\yang\dao\HouseOwnerMapper.class
 com\haoke\HaokeApplication.class
 com\haoke\yang\dao\UserMapper.class
+com\haoke\yang\controller\UserManageController.class
 com\haoke\yang\bean\HouseOwner.class
 com\haoke\yang\bean\CustomerNeed.class
 com\haoke\yang\service\LoginService.class

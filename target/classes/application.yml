@@ -8,7 +8,8 @@ spring:
     username: yangzixin
     password: yangyang0.0
     #driver-class-name: com.mysql.jdbc.Driver
-
+  thymeleaf:
+    cache: false
 mybatis:
   mapper-locations: classpath:mapper/*.xml  #ע�⣺һ��Ҫ��Ӧmapperӳ��xml�ļ�������·��
   type-aliases-package: com.haoke.yang.bean  # ע�⣺��Ӧʵ�����·��

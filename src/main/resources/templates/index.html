@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      xmlns:display="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" rev="stylesheet"
+          href="https://pages.anjukestatic.com/frs/fangfe/anjuke-zufang-pc-site/1.0/zf-list/index_v20191031205918.css"
+          type="text/css"/>
+    <script th:inline="javascript" type="text/javascript">
+        function setStyle() {
+            const userName = [[${session.userName}]];
+            if (userName != null) {
+                document.getElementById("login").style.display = "none";
+                document.getElementById("user").style.display = "block";
+            }
+        }
+        function setUserManage(){
+                document.getElementById("adminManage").style.display = "none";
+        }
+        function setUserManageDisplay(){
+             document.getElementById("adminManage").style.display = "block";
+        }
+    </script>
+</head>
+<body onload="setStyle()">
+<div class="topbar">
+    <div class="header-center clearfix">
+        <div id="userbox" class="user">
+            <div class="userlogin userblock" id="login" style="display: block">
+                <i class="icon icon-people"></i>
+                <a class="link" href="/login" rel="nofollow">登录</a>
+            </div>
+            <div class="userlogin userblock userblockfirst"  id="user" style="display: none" >
+                <i class="icon icon-people"></i>
+                <a class="userLink" href="/index" rel="nofollow" title=[[${session.userName}]] onmousemove="setUserManageDisplay()"><span th:text="${session.userName}" ></span></a>
+                <i class="triangle-down"></i>
+                <ul id="adminManage" style="display: none" onmousemove="setUserManageDisplay()" onmouseout="setUserManage()">
+                    <li><a href="/userManage">工作人员管理</a></li>
+                    <li><a href="/houseManage">房源信息管理</a></li>
+                    <li><a href="/houseOwnerManage">房主信息管理</a></li>
+                    <li><a href="/customerManage">客户需求管理</a></li>
+                    <li><a href="/contractManage">房屋租赁管理</a></li>
+                    <li class="hr"></li>
+                    <li><a href="/userLogout">退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header header-center clearfix" >
+    <a class="logo-site" >          沈阳好客租房</a>
+    <form class="search-form" id="search-form" action="https://sy.zu.anjuke.com" method="GET" >
+        <input type="text" name="kw" class="searchbar-rent" id="search-rent" placeholder="请输入小区名称、地址…"
+               autocomplete="off" maxlength="100" value="" style="color: rgb(153, 153, 153);"><input type="submit" id="search-button" class="searchbar-button" hidefocus="true" value="搜索">
+        <a href="" rel="nofollow" class="search-map" target="_blank" _soj="searchbar"><i class=""></i></a>
+        <div class="auto-wrap"></div>
+    </form>
+    <script type="text/template" id="search-tpl"></script>
+</div>
+
+<div class="w1180">
+
+    <div class="div-border items-list">
+        <!-- 区域 begin-->
+        <div class="items">
+            <span class="item-title">位置：</span>
+            <span class="elems-l">
+                            <a href="https://sy.zu.anjuke.com/" title="区域租房" class="selected-item">区域</a>
+                <div class="sub-items sub-level1">
+                    <em class="arrow-wrap "><em class="arrow"></em></em>
+                    <a href="https://sy.zu.anjuke.com/fangyuan/" title="全部租房" class="selected-item">全部</a>
+                                            <a href="https://sy.zu.anjuke.com/fangyuan/tiexiqu/" title="铁西租房">铁西</a>
+                                                <a href="https://sy.zu.anjuke.com/fangyuan/yuhongqu/"
+                                                   title="于洪租房">于洪</a>
+                                                <a href="https://sy.zu.anjuke.com/fangyuan/hunnanxinqu/"
+                                                   title="浑南租房">浑南</a>
+                                                <a href="https://sy.zu.anjuke.com/fangyuan/huangguqu/"
+                                                   title="皇姑租房">皇姑</a>
+                                                <a href="https://sy.zu.anjuke.com/fangyuan/shenhequ/"
+                                                   title="沈河租房">沈河</a>
+                                                <a href="https://sy.zu.anjuke.com/fangyuan/hepingqu/"
+                                                   title="和平租房">和平</a>
+                                                <a href="https://sy.zu.anjuke.com/fangyuan/dadongqu/"
+                                                   title="大东租房">大东</a>
+                                                <a href="https://sy.zu.anjuke.com/fangyuan/shenbeixinqu/" title="沈北租房">沈北</a>
+                                                <a href="https://sy.zu.anjuke.com/fangyuan/sujiatun/"
+                                                   title="苏家屯租房">苏家屯</a>
+                                                <a href="https://sy.zu.anjuke.com/fangyuan/xinmin/" title="新民租房">新民</a>
+                                                <a href="https://sy.zu.anjuke.com/fangyuan/liaozhong/"
+                                                   title="辽中租房">辽中</a>
+                                                <a href="https://sy.zu.anjuke.com/fangyuan/faku/" title="法库租房">法库</a>
+                                                <a href="https://sy.zu.anjuke.com/fangyuan/kangping/"
+                                                   title="康平租房">康平</a>
+                                                <a href="https://sy.zu.anjuke.com/fangyuan/shenyangzhoubians/"
+                                                   title="沈阳周边租房">沈阳周边</a>
+                                                <a href="" title="租房"></a>
+                                            <div class="sub-items sub-level2">
+                                            </div>
+                </div>
+                        </span>
+        </div>
+        <!-- 区域 end-->
+
+        <!-- 租金 begin-->
+        <div class="items ">
+            <span class="item-title">租金：</span>
+            <span class="elems-l">
+                            <a href="https://sy.zu.anjuke.com/fangyuan/" class="selected-item" rel="nofollow">全部</a>
+                            <a href="https://sy.zu.anjuke.com/fangyuan/zj201/" rel="nofollow">500元以下</a>
+                            <a href="https://sy.zu.anjuke.com/fangyuan/zj202/" rel="nofollow">500-800元</a>
+                            <a href="https://sy.zu.anjuke.com/fangyuan/zj203/" rel="nofollow">800-1000元</a>
+                            <a href="https://sy.zu.anjuke.com/fangyuan/zj204/" rel="nofollow">1000-1500元</a>
+                            <a href="https://sy.zu.anjuke.com/fangyuan/zj205/" rel="nofollow">1500-2000元</a>
+                            <a href="https://sy.zu.anjuke.com/fangyuan/zj206/" rel="nofollow">2000-3000元</a>
+                            <a href="https://sy.zu.anjuke.com/fangyuan/zj207/" rel="nofollow">3000-5000元</a>
+                            <a href="https://sy.zu.anjuke.com/fangyuan/zj208/" rel="nofollow">5000元以上</a>
+                        <div class="pricecond">
+                <!--两个输入框的长度width需要在加载时传入参数计算：数字长度小于等于3位时，width:24px 数字长度n大于3位时，width: 8*n px-->
+                <form action="https://sy.zu.anjuke.com/fangyuan/" id="price_range_form" onsubmit="">
+                    <input id="from-price" class="from-price yell" type="text" name="from_price" maxlength="5" value=""
+                           style="width:32px;" autocomplete="off"> -
+                    <input id="to-price" class="to-price yell" type="text" name="to_price" maxlength="5" value=""
+                           style="width:32px;" autocomplete="off">&nbsp;<span class="">元</span>
+                    <input class="smit" id="pricerange_search" style="display: none;" type="button" value="确定">
+                </form>
+            </div>
+        </span>
+        </div>
+
+        <!--  房型 begin-->
+        <div class="items">
+            <span class="item-title">房型：</span>
+            <span class="elems-l">
+                      <a href="https://sy.zu.anjuke.com/fangyuan/" class="selected-item" rel="nofollow">全部</a>
+                      <a href="https://sy.zu.anjuke.com/fangyuan/fx1/" rel="nofollow">一室</a>
+                      <a href="https://sy.zu.anjuke.com/fangyuan/fx2/" rel="nofollow">二室</a>
+                      <a href="https://sy.zu.anjuke.com/fangyuan/fx3/" rel="nofollow">三室</a>
+                      <a href="https://sy.zu.anjuke.com/fangyuan/fx4/" rel="nofollow">四室</a>
+                      <a href="https://sy.zu.anjuke.com/fangyuan/fx5/" rel="nofollow">五室及以上</a>
+                  </span>
+        </div>
+
+        <!--主模块-->
+        <div class="maincontent">
+            <div class="list-content" id="list-content">
+                <!--我们的开始，是很长的电影-->
+                <!--标签-->
+                <div class="zu-tab">
+                    <a href="https://sy.zu.anjuke.com/fangyuan/" class="curTab">全部</a>
+                </div>
+                <!--排序-->
+                <div class="zu-sort">
+                    <span class="tit">为您找到<em>沈阳</em>附近租房</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="https://j1.58cdn.com.cn/resource/xxzl/xxfw/xxfw.min.js"></script>
+</body>
+</html>
