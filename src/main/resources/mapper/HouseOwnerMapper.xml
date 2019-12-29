@@ -7,11 +7,12 @@
     <result column="sex" property="sex" jdbcType="VARCHAR" />
     <result column="TEL" property="tel" jdbcType="VARCHAR" />
     <result column="IDCard" property="idcard" jdbcType="VARCHAR" />
+    <result column="address" property="address" jdbcType="VARCHAR" />
     <result column="createTime" property="createtime" jdbcType="TIMESTAMP" />
     <result column="updateTime" property="updatetime" jdbcType="TIMESTAMP" />
   </resultMap>
   <sql id="Base_Column_List" >
-    id, name, sex, TEL, IDCard, createTime, updateTime
+    id, name, sex, TEL, IDCard,address, createTime, updateTime
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
@@ -19,17 +20,22 @@
     from HOUSEOWNER
     where id = #{id,jdbcType=INTEGER}
   </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from HOUSEOWNER
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from HOUSEOWNER
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.haoke.yang.bean.HouseOwner" >
     insert into HOUSEOWNER (id, name, sex, 
-      TEL, IDCard, createTime, 
+      TEL, IDCard,address, createTime,
       updateTime)
     values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{sex,jdbcType=VARCHAR}, 
-      #{tel,jdbcType=VARCHAR}, #{idcard,jdbcType=VARCHAR}, #{createtime,jdbcType=TIMESTAMP}, 
-      #{updatetime,jdbcType=TIMESTAMP})
+      #{tel,jdbcType=VARCHAR}, #{idcard,jdbcType=VARCHAR},#{address,jdbcType=VARCHAR}, NOW(),
+      NOW())
   </insert>
   <insert id="insertSelective" parameterType="com.haoke.yang.bean.HouseOwner" >
     insert into HOUSEOWNER
@@ -48,6 +54,9 @@
       </if>
       <if test="idcard != null" >
         IDCard,
+      </if>
+      <if test="address != null" >
+        address,
       </if>
       <if test="createtime != null" >
         createTime,
@@ -72,6 +81,9 @@
       <if test="idcard != null" >
         #{idcard,jdbcType=VARCHAR},
       </if>
+      <if test="address != null" >
+        #{address,jdbcType=VARCHAR},
+      </if>
       <if test="createtime != null" >
         #{createtime,jdbcType=TIMESTAMP},
       </if>
@@ -95,6 +107,9 @@
       <if test="idcard != null" >
         IDCard = #{idcard,jdbcType=VARCHAR},
       </if>
+      <if test="address != null" >
+        #{address,jdbcType=VARCHAR},
+      </if>
       <if test="createtime != null" >
         createTime = #{createtime,jdbcType=TIMESTAMP},
       </if>
@@ -110,8 +125,7 @@
       sex = #{sex,jdbcType=VARCHAR},
       TEL = #{tel,jdbcType=VARCHAR},
       IDCard = #{idcard,jdbcType=VARCHAR},
-      createTime = #{createtime,jdbcType=TIMESTAMP},
-      updateTime = #{updatetime,jdbcType=TIMESTAMP}
+      updateTime = NOW()
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

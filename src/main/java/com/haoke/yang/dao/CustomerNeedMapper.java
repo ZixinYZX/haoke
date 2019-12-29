@@ -4,6 +4,8 @@ import com.haoke.yang.bean.CustomerNeed;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 @Mapper
 public interface CustomerNeedMapper {
@@ -14,6 +16,8 @@ public interface CustomerNeedMapper {
     int insertSelective(CustomerNeed record);
 
     CustomerNeed selectByPrimaryKey(Integer id);
+
+    List<CustomerNeed> selectAll();
 
     int updateByPrimaryKeySelective(CustomerNeed record);
 

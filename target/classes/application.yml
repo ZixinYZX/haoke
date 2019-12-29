@@ -10,6 +10,11 @@ spring:
     #driver-class-name: com.mysql.jdbc.Driver
   thymeleaf:
     cache: false
+
+
+  resources:
+    static-locations=classpath:/static,classpath:/public,classpath:/resources,classpath:/META-INF/resources
 mybatis:
   mapper-locations: classpath:mapper/*.xml  #ע�⣺һ��Ҫ��Ӧmapperӳ��xml�ļ�������·��
   type-aliases-package: com.haoke.yang.bean  # ע�⣺��Ӧʵ�����·��
+spring.mvc.static-path-pattern: /static/**

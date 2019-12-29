@@ -4,6 +4,8 @@ import com.haoke.yang.bean.Contract;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 @Mapper
 public interface ContractMapper {
@@ -14,6 +16,8 @@ public interface ContractMapper {
     int insertSelective(Contract record);
 
     Contract selectByPrimaryKey(Integer id);
+
+    List<Contract> selectAll();
 
     int updateByPrimaryKeySelective(Contract record);
 

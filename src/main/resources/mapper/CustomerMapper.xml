@@ -4,20 +4,27 @@
   <resultMap id="BaseResultMap" type="com.haoke.yang.bean.Customer" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="sex" property="sex" jdbcType="VARCHAR" />
     <result column="IDCard" property="idcard" jdbcType="VARCHAR" />
     <result column="TEL" property="tel" jdbcType="VARCHAR" />
+    <result column="address" property="address" jdbcType="VARCHAR" />
     <result column="customerNeedID" property="customerneedid" jdbcType="INTEGER" />
     <result column="createTime" property="createtime" jdbcType="TIMESTAMP" />
     <result column="updateTime" property="updatetime" jdbcType="TIMESTAMP" />
   </resultMap>
   <sql id="Base_Column_List" >
-    id, name, IDCard, TEL, customerNeedID, createTime, updateTime
+    id, name, sex,IDCard, TEL, address, customerNeedID, createTime, updateTime
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
     <include refid="Base_Column_List" />
     from CUSTOMER
     where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select
+    <include refid="Base_Column_List" />
+    from CUSTOMER
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from CUSTOMER

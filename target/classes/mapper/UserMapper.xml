@@ -22,15 +22,22 @@
     from USER
     where id = #{id,jdbcType=INTEGER}
   </select>
+
+  <select id="selectAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from USER
+  </select>
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from USER
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.haoke.yang.bean.User" >
-    insert into USER (id, userName, password, 
+    insert into USER (userName, password,
       createTime, updateTime)
-    values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
-      #{createtime,jdbcType=TIMESTAMP}, #{updatetime,jdbcType=TIMESTAMP})
+    values ( #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
+      NOW(),NOW())
   </insert>
   <insert id="insertSelective" parameterType="com.haoke.yang.bean.User" >
     insert into USER
@@ -59,12 +66,9 @@
       <if test="password != null" >
         #{password,jdbcType=VARCHAR},
       </if>
-      <if test="createtime != null" >
-        #{now(),jdbcType=TIMESTAMP},
-      </if>
-      <if test="updatetime != null" >
-        #{updatetime,jdbcType=TIMESTAMP},
-      </if>
+      NOW(),
+      NOW(),
+
     </trim>
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.haoke.yang.bean.User" >
@@ -79,9 +83,7 @@
       <if test="createtime != null" >
         createTime = #{createtime,jdbcType=TIMESTAMP},
       </if>
-      <if test="updatetime != null" >
-        updateTime = #{updatetime,jdbcType=TIMESTAMP},
-      </if>
+        updateTime = NOW(),
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
@@ -89,8 +91,7 @@
     update USER
     set userName = #{username,jdbcType=VARCHAR},
       password = #{password,jdbcType=VARCHAR},
-      createTime = #{createtime,jdbcType=TIMESTAMP},
-      updateTime = #{updatetime,jdbcType=TIMESTAMP}
+      updateTime = NOW()
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

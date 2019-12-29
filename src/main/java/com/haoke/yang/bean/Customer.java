@@ -7,15 +7,35 @@ public class Customer {
 
     private String name;
 
+    private String sex;
+
     private String idcard;
 
     private String tel;
+
+    private String address;
 
     private Integer customerneedid;
 
     private Date createtime;
 
     private Date updatetime;
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
     public Integer getId() {
         return id;
@@ -71,5 +91,20 @@ public class Customer {
 
     public void setUpdatetime(Date updatetime) {
         this.updatetime = updatetime;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", sex='" + sex + '\'' +
+                ", idcard='" + idcard + '\'' +
+                ", tel='" + tel + '\'' +
+                ", address='" + address + '\'' +
+                ", customerneedid=" + customerneedid +
+                ", createtime=" + createtime +
+                ", updatetime=" + updatetime +
+                '}';
     }
 }

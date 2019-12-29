@@ -13,9 +13,19 @@ public class HouseOwner {
 
     private String idcard;
 
+    private String address;
+
     private Date createtime;
 
     private Date updatetime;
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
     public Integer getId() {
         return id;
@@ -71,5 +81,19 @@ public class HouseOwner {
 
     public void setUpdatetime(Date updatetime) {
         this.updatetime = updatetime;
+    }
+
+    @Override
+    public String toString() {
+        return "HouseOwner{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", sex='" + sex + '\'' +
+                ", tel='" + tel + '\'' +
+                ", idcard='" + idcard + '\'' +
+                ", address='" + address + '\'' +
+                ", createtime=" + createtime +
+                ", updatetime=" + updatetime +
+                '}';
     }
 }

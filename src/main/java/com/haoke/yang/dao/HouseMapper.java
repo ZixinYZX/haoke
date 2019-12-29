@@ -4,6 +4,8 @@ import com.haoke.yang.bean.House;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 @Mapper
 public interface HouseMapper {
@@ -14,6 +16,8 @@ public interface HouseMapper {
     int insertSelective(House record);
 
     House selectByPrimaryKey(Integer id);
+
+    List<House> selectAll();
 
     int updateByPrimaryKeySelective(House record);
 

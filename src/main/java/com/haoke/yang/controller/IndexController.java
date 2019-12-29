@@ -32,41 +32,24 @@ public class IndexController {
 
     @RequestMapping("/login")
     public String login(){
-        return "userLogin";
+        return "login";
     }
     @RequestMapping("/userLogin")
     public String userLogin(@RequestParam("username") String username, @RequestParam("password") String password, HttpServletRequest request){
         User user = loginService.userLogin(username,password);
         if(user != null){  //登录成功
             request.getSession().setAttribute("userName",user.getUsername());     //将用户信息放入session
-            return "index";
+            if (user.getUsername().equals("admin"))
+                return "index";
+            else
+                return "index-2";
         }
         request.setAttribute("loginMessage","账号或密码错误");
-        return "userLogin";
-    }
-    @RequestMapping("/userManage")
-    public String userManage(){
-        return "userManage";
-    }
-    @RequestMapping("/houseManage")
-    public String houseManage(){
-        return "houseManage";
-    }
-    @RequestMapping("/houseOwnerManage")
-    public String houseOwnerManage(){
-        return "houseOwnerManage";
-    }
-    @RequestMapping("/customerManage")
-    public String customerManage(){
-        return "customerManage";
-    }
-    @RequestMapping("/contractManage")
-    public String contractManage(){
-        return "contractManage";
+        return "login";
     }
     @RequestMapping("/userLogout")
     public String userLogout(HttpServletRequest request){
         request.getSession().setAttribute("userName",null);
-        return "index";
+        return "login";
     }
 }
